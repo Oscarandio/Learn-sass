@@ -1,0 +1,103 @@
+//Variables
+
+$brand-color: #CF649A;
+$text-color: #222222;
+$background-color: #F8F9FA;
+$white: white;
+
+$title-font: 'Niconne',
+cursive;
+$primary-font: 'Open Sans',
+sans-serif;
+
+$font-size: 1rem;
+$size: 1em;
+
+//Valores generales
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  font-family: $primary-font;
+  font-size: $font-size *1.2;
+
+}
+
+//Header
+
+h1 {
+  color: $brand-color;
+  font-family: $title-font;
+  font-size: $font-size * 4;
+  text-align: center;
+}
+
+//Container
+
+.container {
+  margin: $size;
+}
+
+//Acordeón
+
+/* Estilo de los botones que se usan para abrir y cerrar el acordeón */
+
+.accordion {
+  width: 100%;
+  font-family: $primary-font;
+  font-size: $size;
+  font-weight: bold;
+  color: $white;
+  background-color: $brand-color;
+  padding: 25px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 0.1em solid $background-color;
+  transition: 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(207, 100, 154, 0.7);
+
+  }
+
+}
+
+/* Estilos del contenido dentro del acordeón (oculto por defecto)*/
+
+.panel {
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+//Blockquotes
+
+blockquote {
+
+  margin: 20px 0;
+  padding: 20px;
+  font-family: monospace;
+  font-size: $size * 0.9;
+  background-color: #eee;
+  border: 1px solid #ddd;
+
+}
+
+//Estilos para Desktop
+
+@media screen and (min-width: 1024px) {
+
+  .container {
+    width: 1000px;
+    margin: auto;
+  }
+
+}
+
