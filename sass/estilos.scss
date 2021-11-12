@@ -53,17 +53,17 @@ h1 {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   div {
-    border: 1px solid $brand-color;
     padding: 10px;
     background-color: $brand-color;
     color: $white;
     border-radius: 35px;
-    margin: 0 10px;
+    margin: 10px;
     width: 400px;
-    height: 400px;
+    height: 275px;
 
     &:hover {
       background-color: rgba(207, 100, 154, 0.9);
@@ -161,6 +161,20 @@ a {
   .container {
     width: 1000px;
     margin: auto;
+  }
+
+  // Tamaño tarjetas Inicio
+
+  .cards {
+  
+    div {
+  
+      margin: 0 10px;
+      width: 400px;
+      height: 400px;
+
+    }
+  
   }
 
 }
