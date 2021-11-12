@@ -17,6 +17,8 @@ $size: 1em;
 
 * {
   box-sizing: border-box;
+
+
 }
 
 body {
@@ -25,6 +27,8 @@ body {
   background-color: $background-color;
   font-family: $primary-font;
   font-size: $font-size *1.2;
+  
+
 
 }
 
@@ -35,12 +39,46 @@ h1 {
   font-family: $title-font;
   font-size: $font-size * 4;
   text-align: center;
+  
 }
 
 //Container
 
 .container {
   margin: $size;
+
+}
+
+// Tarjetas Página Inicio
+
+.cards {
+  display: flex;
+  justify-content: center;
+
+  div {
+    border: 1px solid $brand-color;
+    padding: 10px;
+    background-color: $brand-color;
+    color: $white;
+    border-radius: 35px;
+    margin: 0 10px;
+    width: 400px;
+    height: 400px;
+
+    &:hover {
+      background-color: rgba(207, 100, 154, 0.9);
+
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      font-size: $font-size * 2;
+    }
+  }
+
 }
 
 //Acordeón
@@ -58,6 +96,7 @@ h1 {
   outline: none;
   border: none;
   border-bottom: 0.1em solid $background-color;
+  border-radius: 10px;
   transition: 0.4s;
   cursor: pointer;
 
@@ -90,6 +129,31 @@ blockquote {
 
 }
 
+.pictures {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+
+}
+
+a {
+  text-decoration: none;
+  color: $brand-color;
+
+  &:hover {
+    color: rgb(110, 38, 74);
+
+  }
+}
+
+.footer {
+  background-color: black;
+  color: $background-color;
+  font-size: $font-size / 1.1;
+  padding: 8px;
+  margin-top: 15px;
+}
+
 //Estilos para Desktop
 
 @media screen and (min-width: 1024px) {
@@ -100,4 +164,3 @@ blockquote {
   }
 
 }
-
