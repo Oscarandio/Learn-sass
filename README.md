@@ -1,6 +1,6 @@
 # Description
 
-This a small website to learn about the CSS Preprocessor Sass. It has an Installation page and a tutorial. You can see the website [here](https://oscarandio.github.io/Learn-sass/)
+This a small website to learn about the CSS Preprocessor Sass. It has an Installation page and a tutorial. You can see the website [here](https://oscarandio.github.io/Learn-sass/).
 
 ![thumnail](https://raw.githubusercontent.com/Oscarandio/Learn-sass/main/public/thumbnail.jpg)
 
