@@ -4,14 +4,15 @@ $brand-color: #CF649A;
 $text-color: #222222;
 $background-color: #F8F9FA;
 $white: white;
-
 $title-font: 'Niconne',
 cursive;
 $primary-font: 'Open Sans',
 sans-serif;
-
 $font-size: 1rem;
 $size: 1em;
+$zero: 0;
+$footer-background: #121212;
+$footer-color: #555;
 
 //Valores generales
 
@@ -21,11 +22,12 @@ $size: 1em;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: $zero;
+  padding: $zero;
   background-color: $background-color;
   font-family: $primary-font;
-  font-size: $font-size *1.2;
+  font-size: $font-size * 1.2;
+
 
 
 }
@@ -37,7 +39,7 @@ h1 {
   font-family: $title-font;
   font-size: $font-size * 4;
   text-align: center;
-  
+
 }
 
 //Container
@@ -47,6 +49,15 @@ h1 {
 
 }
 
+// Subtítulos
+
+h2 {
+  font-size: $font-size * 1.2;
+  border-bottom: 2px solid #eee;
+  padding-bottom: $size / 2;
+}
+
+
 // Tarjetas Página Inicio
 
 .cards {
@@ -55,16 +66,17 @@ h1 {
   justify-content: center;
 
   div {
-    padding: 10px;
+
     background-color: $brand-color;
     color: $white;
-    border-radius: 35px;
-    margin: 10px;
+    border-radius: $size;
+    margin: $size / 2;
     width: 400px;
     height: 275px;
 
     &:hover {
-      background-color: rgba(207, 100, 154, 0.9);
+      background-color: $brand-color;
+      opacity: 0.9;
 
     }
 
@@ -79,6 +91,13 @@ h1 {
 
 }
 
+// Estilos iconos Inicio
+
+.fa-chevron-circle-right {
+  font-size: $size / 1.2;
+  color: $brand-color;
+}
+
 //Acordeón
 
 /* Estilo de los botones que se usan para abrir y cerrar el acordeón */
@@ -90,39 +109,41 @@ h1 {
   font-weight: bold;
   color: $white;
   background-color: $brand-color;
-  padding: 25px 10px;
+  padding: $size;
   outline: none;
   border: none;
   border-bottom: 0.1em solid $background-color;
-  border-radius: 10px;
+  border-radius: $size;
   transition: 0.4s;
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(207, 100, 154, 0.7);
+    background-color: $brand-color;
+    opacity: 0.9;
 
   }
 
 }
 
 .accordion:before {
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   content: "\f078";
   float: right;
-  padding-right: 1em;
+  padding-right: $size;
+  padding-top: $size / 4;
 
 }
 
 .active:before {
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   content: "\f077";
 }
 
 /* Estilos del contenido dentro del acordeón (oculto por defecto)*/
 
 .panel {
-  padding: 0 10px;
-  max-height: 0;
+  padding: $zero $size;
+  max-height: $zero;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
@@ -131,8 +152,8 @@ h1 {
 
 blockquote {
 
-  margin: 20px 0;
-  padding: 20px;
+  margin: $size $zero;
+  padding: $size;
   font-family: monospace;
   font-size: $size * 0.9;
   background-color: #eee;
@@ -143,7 +164,7 @@ blockquote {
 .pictures {
   display: block;
   margin: auto;
-  border-radius: 8px;
+  border-radius: $size;
 
 }
 
@@ -153,27 +174,44 @@ a {
 
 }
 
+ol {
+  margin: $size;
+  font-size: $font-size;
+}
+
+ol li {
+
+  padding: $size / 2;
+
+}
+
+ol li em {
+  font-family: monospace;
+  background-color: #eee;
+  font-style: normal;
+}
+
 // Footer
 
 .main-footer {
-  background: #121212;
+  background: $footer-background;
   color: $white;
-  padding: 1em;
-  margin-top: 1em * 2;
+  padding: $size;
+  margin-top: $size;
 }
 
 .footer-title {
-  border-bottom: 1px dotted #555;
-  padding-bottom: 20px;
+  border-bottom: 1px dotted $footer-color;
+  padding-bottom: $size;
 }
 
 .footer-txt {
-  color: #555;
+  color: $footer-color;
   text-align: justify;
 }
 
 .footer-link {
-  color: #555;
+  color: $footer-color;
   text-decoration: none;
   display: block;
 }
@@ -193,27 +231,27 @@ a {
   // Tamaño tarjetas Inicio
 
   .cards {
-  
+
     div {
-  
-      margin: 0 10px;
+
+      margin: $zero $size;
       width: 400px;
       height: 400px;
 
     }
-  
+
   }
 
   .main-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  
+
   }
 
   .footer-section {
     width: 400px;
-    margin: 1em;
+    margin: $size;
   }
 
 }
