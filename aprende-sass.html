@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link href="fonts/Niconne.ttf" rel="stylesheet" />
     <title>Aprender Sass</title>
   </head>
 
   <body>
     <header>
-      <h1>Aprende Sass</h1>
+      <a href="index.html" title="Como aprender Sass"><h1>Aprende Sass</h1></a>
     </header>
 
   
@@ -30,7 +31,7 @@
               title="Como instalar Sass"
               >En este enlace</a
             >
-            puedes aprender a instalar Sass si todavía no sabes como.
+            puedes aprender a instalar Sass si todavía no sabes como hacerlo.
           </p>
 
           <p>
@@ -301,34 +302,45 @@
           </div>
         </section>
         <section>
-          <button class="accordion">OPERATORS</button>
+          <button class="accordion">OPERADORES</button>
           <div class="panel">
             <p>
-              Doing math in your CSS is very helpful. Sass has a handful of
-              standard math operators like +, -, *, math.div(), and %. In our
-              example we're going to do some simple math to calculate widths for
-              an article and aside.
+              Poder hacer operaciones matemáticas en tu CSS resulta muy útil. Sass usa operadores estándar como la suma (+), la resta (-), la multiplicación (*), la división (math.div()) y los porcentajes (%).
             </p>
             <blockquote>
-              @use "sass:math"; .container { display: flex; }
-              article[role="main"] { width: math.div(600px, 960px) * 100%; }
-              aside[role="complementary"] { width: math.div(300px, 960px) *
-              100%; margin-left: auto; }
+              @use "sass:math";<br><br> .container { <br><br>display: flex;<br><br> }<br><br>
+              article[role="main"] {<br><br> width: math.div(600px, 960px) * 100%;<br><br> }<br><br>
+              aside[role="complementary"] {<br><br> width: math.div(300px, 960px) *
+              100%;<br> margin-left: auto;<br><br> }
             </blockquote>
 
-            <p>
-              We've created a very simple fluid grid, based on 960px. Operations
-              in Sass let us do something like take pixel values and convert
-              them to percentages without much hassle.
-            </p>
           </div>
         </section>
       </article>
 
-      <footer class="footer">
+        <!-- INICIO FOOTER -->
 
-<span>Todos los derechos reservados 2021.</span>
-</footer>
+
+        <footer class="main-footer">
+          <div class="footer-section">
+            <h2 class="footer-title">Acerca de</h2>
+            <p class="footer-txt">En esta página puedes <b>aprender a usar el preprocesador Sass</b> de una manera muy fácil y rápida. Si no sabes como instalar Sass, te recomiendo ir a esta sección primero y después a esta otra para empezar a aprender los conceptos del preprocesador Sass.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h2 class="footer-title">Links</h2>
+            <p class="footer-txt"><a href="index.html" class="footer-link">Inicio</a></p>
+            <p class="footer-txt"><a href="instalar-sass.html" class="footer-link">Instalación Sass</a></p>
+            <p class="footer-txt"><a href="aprende-sass.html" class="footer-link">Tutorial Sass</a></p>
+            <p class="footer-txt"><a href="" class="footer-link">FAQ</a></p>
+            <p class="footer-txt"><a href="" class="footer-link">Acerca de</a></p>
+            <p class="footer-txt"><a href="" class="footer-link">Contacto</a></p>
+          </div>
+         
+        </footer>
+    
+        <!-- FIN FOOTER -->
+
     <script src="js/accordion.js"></script>
   </body>
 </html>
