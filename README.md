@@ -1,7 +1,19 @@
 # Description
 
-Still in process: [Visit here](https://oscarandio.github.io/Learn-sass/)
+This a small website to learn about the CSS Preprocessor Sass. It has an Installation page and a tutorial. You can see the website [here](https://oscarandio.github.io/Learn-sass/)
 
 ![thumnail](https://raw.githubusercontent.com/Oscarandio/Learn-sass/main/public/thumbnail.jpg)
 
-# Next Updates
+The main website leads you to the Installation page or the tutorial with this buttons.
+
+![thumnail](https://raw.githubusercontent.com/Oscarandio/Learn-sass/main/public/thumbnail.jpg)
+
+The tutorial shows Sass concepts within an accordeon made with Javascript. This way you can find quick what you want.
+
+![thumnail](https://raw.githubusercontent.com/Oscarandio/Learn-sass/main/public/thumbnail.jpg)
+
+![thumnail](https://raw.githubusercontent.com/Oscarandio/Learn-sass/main/public/thumbnail.jpg)
+
+There's also a small FAQ page.
+
+
