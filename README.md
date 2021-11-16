@@ -8,7 +8,7 @@ The main website leads you to the Installation page or the tutorial with this bu
 
 ![thumnail](https://raw.githubusercontent.com/Oscarandio/Learn-sass/main/public/learn.jpg)
 
-The tutorial shows Sass concepts within an accordeon made with Javascript. This way you can find quick what you want.
+The tutorial shows Sass concepts within an accordeon made with Javascript. This way you can find quickly what you want.
 
 ![thumnail](https://raw.githubusercontent.com/Oscarandio/Learn-sass/main/public/install.jpg)
 
